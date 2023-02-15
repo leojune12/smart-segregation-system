@@ -42,7 +42,7 @@ void metal_sensor_status() {
 
   if (!sensor_status) {
     push_inductive_servo();
-    delay(1000);
+    delay(3000);
     pull_inductive_servo();
   }
 }
@@ -54,7 +54,7 @@ void plastic_sensor_status() {
 
   if (sensor_status) {
     push_capacitive_servo();
-    delay(1000);
+    delay(3000);
     pull_capacitive_servo();
   }
 }
